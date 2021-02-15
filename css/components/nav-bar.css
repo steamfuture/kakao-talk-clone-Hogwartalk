@@ -1,0 +1,51 @@
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  /* background-color: rgba(109, 109, 109, 0.1); */
+  background-color: black;
+  width: 100%;
+}
+
+.nav__list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.nav__link i {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav__link span {
+  position: absolute;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  left: 190px;
+  bottom: 40px;
+  animation: notificationAnimation 2s ease-in-out infinite;
+}
+
+.nav__notification .badge {
+  border-radius: 0;
+}
+
+.nav__update-notification {
+  right: 45px;
+  bottom: 45px;
+}

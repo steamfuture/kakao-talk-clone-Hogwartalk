@@ -1,0 +1,17 @@
+.alt-header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  padding-top: 54px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 1;
+}
+
+.alt-header__column:nth-child(2) h1 {
+  font-size: 30px;
+}

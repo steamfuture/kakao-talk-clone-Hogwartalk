@@ -2,6 +2,12 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,12 +15,60 @@
   </head>
   <body>
     <!-- status-bar -->
-    <div></div>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>09:43</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-battery-quarter"></i>
+        <span>20%</span>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
     <!-- header -->
-    <header></header>
-    <!-- contents -->
-    <main></main>
-    <!-- nav-bar -->
-    <div></div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to HogwarTalk</h1>
+      <p class="welcome-header__text">
+        If you have a Hogwars account,<br />
+        log in with your Magician number.
+      </p>
+    </header>
+    <!-- form -->
+    <form action="friends.html" method="get" class="login-form">
+      <input
+        class="login-form__username"
+        name="username"
+        type="text"
+        placeholder="Magician number"
+        required
+      />
+      <input
+        class="login-form__password"
+        name="password"
+        type="password"
+        placeholder="Password"
+        required
+        minlength="8"
+      />
+      <input class="login-form__submit" type="submit" value="Log In" />
+      <input class="login-form__submit" type="submit" value="Sign up" />
+    </form>
+    <a class="footer" href="#">Find Hogwarts Account or Password</a>
+    <!-- background image -->
+    <img
+      class="login-background__img"
+      src="http://www.the-leaky-cauldron.org/wp-content/uploads/assets/hogwarts-castle3-1024x768.jpg"
+    />
+    <div id="no-mobile">
+      <img
+        src="https://lh3.googleusercontent.com/proxy/Eyx_P90GcNxK1AASvQmRKS8anL0-mzcMIq9ah_RLlvbsJ4UkMB5X2ZwB_d-l7hTjOTVsDhCwHY6A0WAHvS7w1m_XK-7BNFoFFZk8pPfkv6HQrPHbks4L379azoZbq9JC3I8mrRfhAjByq6SwhFkbxtzLU4rNx9EWNHkd8wiXfUTFrRPHWq38mpcCAOmN4qI61todTg"
+        alt=""
+      />
+      <span>Your screen is too big!! 😭</span>
+    </div>
   </body>
 </html>

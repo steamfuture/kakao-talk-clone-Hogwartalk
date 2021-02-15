@@ -1,0 +1,175 @@
+@keyframes bgImgChange {
+  0% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+
+  40%,
+  60% {
+    background-color: rgba(255, 0, 0, 0.6);
+  }
+
+  80%,
+  100% {
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+}
+
+.news {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  animation: bgImgChange 0.5s ease-in-out infinite;
+}
+
+.today-news {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.news__columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news__column:last-child {
+  margin-left: 15px;
+}
+
+.news__image {
+  width: 220px;
+  height: 180px;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__image img {
+  width: auto;
+  height: 100%;
+}
+
+.news__title {
+  margin-top: 15px;
+  font-size: 20px;
+  background-color: black;
+  padding: 10px 15px;
+}
+
+.open-chat {
+  margin: 0px 20px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  opacity: 0.7;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.open-post__members {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__mamber-count {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  margin: 0px 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post__mamber-status {
+  color: #fd7cca;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}

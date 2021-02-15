@@ -1,0 +1,38 @@
+.screen-header {
+  position: fixed;
+  display: flex;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  padding-top: 54px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  z-index: 1;
+}
+
+.screen-header span {
+  font-size: 40px;
+}
+
+.screen-header i {
+  font-size: 20px;
+}
+
+.screen-header__icons i {
+  margin-left: 20px;
+}
+
+@keyframes ratateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: ratateCog 1s linear infinite;
+}
