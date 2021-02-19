@@ -30,11 +30,33 @@
   border: none;
 }
 
+.login-form__submit:hover {
+  /* background-color: yellow; */
+  box-shadow: 0px 1px 15px rgba(255, 255, 255, 0.4) inset;
+}
+
 .login-form .login-form__username,
 .login-form .login-form__password {
   background-color: rgba(255, 255, 255, 0.4);
   color: white;
   padding: 0px 15px;
+}
+
+@keyframes inputFocus {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0px 1px 15px black inset;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+
+.login-form__username:focus,
+.login-form__password:focus {
+  animation: inputFocus 1s ease-in-out infinite;
 }
 
 .login-form input::placeholder {
