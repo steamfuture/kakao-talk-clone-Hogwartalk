@@ -1,7 +1,3 @@
-.pocus-page i {
-  color: white;
-}
-
 .friends-screen__Bookmark,
 .friends-screen__Recommend,
 .friends-screen__Channel,
@@ -13,13 +9,44 @@
 .friends-screen__Recommend-header,
 .friends-screen__Channel-header,
 .friends-screen__Friends-header {
-  padding: 15px 20px;
+  padding: 15px 20px 5px 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: rgba(255, 255, 255, 0.2);
   font-size: 13px;
+}
+
+.friends-screen__Channel .user-component__column:last-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.friends-screen__Channel .user-component__column:last-child span {
+  margin-right: 2px;
+}
+
+.birthday-mark {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes birthdayMark {
+  0% {
+    text-shadow: 0 0 1px #fd89f7, 0 0 2px #fd89f7, 0 0 3px #fd89f7;
+  }
+  50% {
+    text-shadow: 0 0 10px #fd89f7, 0 0 15px #fd89f7, 0 0 20px #fd89f7;
+  }
+  100% {
+    text-shadow: 0 0 1px #fd89f7, 0 0 2px #fd89f7, 0 0 3px #fd89f7;
+  }
+}
+
+.birthday-mark i {
+  /* text-shadow: 0 0 3px var(--red), 0 0 4px var(--red), 0 0 5px var(--red); */
+  animation: birthdayMark 2s linear infinite;
 }
 
 .music {

@@ -16,7 +16,12 @@
 
 .nav__link i {
   font-size: 35px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.nav__link i:hover {
+  text-shadow: 0 0 3px yellow, 0 0 4px green, 0 0 5px red;
+  color: white;
 }
 
 .nav__link span {
@@ -48,4 +53,8 @@
 .nav__update-notification {
   right: 45px;
   bottom: 45px;
+}
+
+.pocus-page i {
+  color: white;
 }

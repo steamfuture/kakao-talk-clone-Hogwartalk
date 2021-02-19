@@ -39,6 +39,24 @@
   align-items: center;
 }
 
+@keyframes redBattery {
+  0% {
+    color: white;
+  }
+  40%,
+  60% {
+    color: (--red);
+    text-shadow: 0 0 3px var(--red), 0 0 4px var(--red), 0 0 5px var(--red);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.status-bar__column:last-child {
+  animation: redBattery 1s linear infinite;
+}
+
 .status-bar__column:last-child i,
 .status-bar__column:last-child span {
   margin-left: 5px;

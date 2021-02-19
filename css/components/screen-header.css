@@ -36,3 +36,25 @@
 .screen-header__icons .fa-cog:hover {
   animation: ratateCog 1s linear infinite;
 }
+
+@keyframes shakeMusic {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: none;
+  }
+  75% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: shakeMusic 0.5s linear infinite;
+}

@@ -1,3 +1,39 @@
+.find-screen {
+  overflow: hidden;
+}
+
+@keyframes notification {
+  from {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  color: yellow;
+  font-size: 20px;
+  animation: notification 3s linear infinite;
+}
+
+.notification h1 {
+  margin: 0px 10px;
+}
+
+.notification i:first-child {
+  margin-right: 10px;
+}
+
+.notification i:last-child {
+  margin-left: 10px;
+}
+
 @keyframes bgImgChange {
   0% {
     background-color: rgba(255, 0, 0, 0.1);

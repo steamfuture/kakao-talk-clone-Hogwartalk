@@ -4,6 +4,17 @@
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.2s ease-in-out;
+  position: relative;
+}
+
+.user-component__badge {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: tomato;
 }
 
 .user-component:hover {
@@ -49,12 +60,13 @@
 
 .user-component__title {
   font-size: 20px;
+  margin-right: 10px;
 }
 
 .user-component__subtitle {
   font-size: 15px;
   margin-top: 8px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .user-component__column:last-child {
