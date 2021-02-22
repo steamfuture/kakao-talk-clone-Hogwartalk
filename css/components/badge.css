@@ -1,14 +1,20 @@
 .badge,
-.badge-sm {
-  background-color: tomato;
+.badge-sm,
+.badge-none {
+  background-color: rgba(0, 0, 0, 0);
   width: 20px;
   height: 20px;
   border-radius: 50px;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 13px;
+  margin-top: 10px;
+}
+
+.badge,
+.badge-sm {
+  background-color: tomato;
 }
 
 .badge-sm {

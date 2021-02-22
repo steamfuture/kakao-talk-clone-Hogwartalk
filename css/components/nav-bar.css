@@ -41,7 +41,7 @@
 }
 
 .nav__notification {
-  left: 190px;
+  left: 225px;
   bottom: 40px;
   animation: notificationAnimation 2s ease-in-out infinite;
 }

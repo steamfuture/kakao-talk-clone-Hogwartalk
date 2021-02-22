@@ -20,7 +20,6 @@
 
 .friends-screen__Channel .user-component__column:last-child {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
 }
 
 .friends-screen__Channel .user-component__column:last-child span {
@@ -110,5 +109,9 @@
 #splash-screen span {
   z-index: 1000;
   color: white;
+  font-size: 25px;
+}
+
+.friends-screen__Channel .user-component__avatar {
   font-size: 25px;
 }
