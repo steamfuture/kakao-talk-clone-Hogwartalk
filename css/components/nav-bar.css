@@ -40,9 +40,14 @@
   }
 }
 
+.nav__link {
+  position: relative;
+}
+
 .nav__notification {
-  left: 225px;
-  bottom: 40px;
+  position: absolute;
+  left: 25px;
+  bottom: 25px;
   animation: notificationAnimation 2s ease-in-out infinite;
 }
 
