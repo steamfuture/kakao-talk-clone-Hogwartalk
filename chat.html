@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HogwarTalk | Chat</title>
   </head>
-  <body>
+  <body class="chat-body">
     <!-- status-bar -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -46,30 +46,47 @@
     <!-- contents -->
     <main class="main-chat">
       <div class="chats__timestamp">Thursday, Jan 28, 2021</div>
+
+      <!-- 送信メッセージ -->
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Harry!!</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Harry!!</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Happy Birth Day!!!</span>
+            <span class="message__time">12:11</span>
+          </div>
+        </div>
+      </div>
+      <!-- 送信メッセージ -->
       <!-- 発信メッセージ -->
       <div class="message-row">
         <div class="message-image">
           <img
-            src="https://i.pinimg.com/736x/03/b5/76/03b5760d8ec7e7b7953e0b9b3cf27dff.jpg"
+            src="https://thumb.pann.com/tc_480/https://fimg5.pann.com/new/download.jsp?FileID=58258925"
           />
         </div>
         <div class="message-row__content">
           <span class="message__author">harry</span>
           <div class="message__info">
-            <span class="message__bubble">lol</span>
-            <span class="message__time">21:22</span>
+            <span class="message__bubble">Thank you!! :)</span>
+            <span class="message__time">12:25</span>
           </div>
         </div>
       </div>
-      <!-- 送信メッセージ -->
-      <div class="message-row message-row--own">
-        <div class="message-row__content">
-          <div class="message__info">
-            <span class="message__bubble">What's up?</span>
-            <span class="message__time">21:27</span>
-          </div>
-        </div>
-      </div>
+      <!-- 発信メッセージ -->
     </main>
 
     <form class="reply">
